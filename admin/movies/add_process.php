@@ -1,15 +1,17 @@
 <?php
-$movie_id = $_POST["movie_id"];
+// Pastikan form menggunakan atribut name yang sesuai dengan kolom dalam tabel movies
 $judul = $_POST["judul"];
 $deskripsi = $_POST["deskripsi"];
 $cover_image = $_POST["cover_image"];
 $actor = $_POST["actor"];
 $durasi = $_POST["durasi"];
 
-include_once "connection.php";
+include_once "../../koneksi.php";
 
-mysqli_query($conn, "INSERT INTO `produk` (`nama_produk`, `harga`, `stok`, `keterangan`, `gambar`, `id_kategori`) 
-VALUES ('$nama_produk', '$harga', '$stok', '$keterangan', '$gambar', '$id_kategori')");
+// Lakukan query untuk menyimpan data film ke dalam tabel movies
+mysqli_query($conn, "INSERT INTO `movies` (`judul`, `deskripsi`, `cover_image`, `actor`, `durasi`) 
+VALUES ('$judul', '$deskripsi', '$cover_image', '$actor', '$durasi')");
 
-header("Location: index.php");
+// Redirect ke halaman movies.php setelah berhasil menambahkan film
+header("Location: ../movies.php");
 ?>

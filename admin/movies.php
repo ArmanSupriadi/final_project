@@ -1,6 +1,6 @@
 <?php
 include '../koneksi.php';
-$alls = mysqli_query($conn, "SELECT movies.movie_id, movies.judul, movies.cover_image, genres.genre_name FROM movies JOIN genres ON movies.genre_id = genres.genre_id");
+$alls = mysqli_query($conn, "SELECT movies.movie_id, movies.judul, movies.cover_image FROM movies");
 
 ?>
 <!DOCTYPE html>
@@ -196,7 +196,7 @@ $alls = mysqli_query($conn, "SELECT movies.movie_id, movies.judul, movies.cover_
                 <div class="row">
                     <div class="col-sm-12 overflow-hidden">
                         <button type="button" class="btn btn-hover iq-button" data-toggle="modal" data-target="#tambah" style="margin-bottom: 20px">
-                            <a href="addmovie.php" style="text-decoration: none; color: inherit;">ADD MOVIES</a>
+                            <a href="movies/addmovie.php" style="text-decoration: none; color: inherit;">ADD MOVIES</a>
                         </button>
 
                         <div class="row">
