@@ -1,6 +1,6 @@
 <?php
 include '../koneksi.php';
-$directors = mysqli_query($conn, "SELECT nama, email FROM director");
+$genres = mysqli_query($conn, "SELECT * FROM genres");
 
 ?>
 <!DOCTYPE html>
@@ -195,14 +195,13 @@ $directors = mysqli_query($conn, "SELECT nama, email FROM director");
             <div class="container-fluid" style="margin-top: 80px">
                 <div class="row">
                     <div class="col-sm-12 overflow-hidden">
-                        <button type="button" class="btn btn-hover iq-button" data-toggle="modal" data-target="#tambah" style="margin-bottom: 20px">ADD DIRECTOR</button>
+                        <button type="button" class="btn btn-hover iq-button" data-toggle="modal" data-target="#tambah" style="margin-bottom: 20px">ADD GENRE</button>
                         <div class="row">
-                            <?php foreach ($directors as $director) : ?>
+                            <?php foreach ($genres as $genre) : ?>
                                 <div class="col-md-3 col-sm-6 mb-3">
                                     <div class="card-body border border-light rounded" style="border-radius: 15px;">
-                                        <h5 class="card-title text-center"><?= $director['nama']; ?></h5>
-                                        <p class="card-text text-center"><?= $director['email']; ?></p>
-                                        <div class="d-flex justify-content-center">
+                                        <h3 class="card-text text-center mb-0"><?= $genre['genre_name']; ?></h3>
+                                        <div class="d-flex justify-content-center mt-2">
                                             <span class="btn btn-hover iq-button">
                                                 <i class="fa fa-pencil mr-1"></i>
                                             </span>

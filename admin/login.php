@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btnLogin'])) {
 
     if ($result && mysqli_num_rows($result) == 1) {
         // Login berhasil, redirect ke halaman admin
-        header("Location: index.php"); // Ganti halaman_admin.php dengan halaman yang sesuai
+        header("Location: movies.php"); // Ganti halaman_admin.php dengan halaman yang sesuai
         exit();
     } else {
         // Login gagal, tampilkan pesan error

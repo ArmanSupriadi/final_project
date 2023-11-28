@@ -40,16 +40,17 @@ $alls = mysqli_query($conn, "SELECT movies.judul, movies.cover_image, genres.gen
                                     <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
                                 </div>
                             </a>
-                            <a href="index.php" class="navbar-brand">
+                            <a href="movies.php" class="navbar-brand">
                                 <img src="../images/logo.png" class="img-fluid logo" alt="" />
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div class="menu-main-menu-container">
                                     <ul id="top-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item"><a href="index.php">Home</a></li>
-                                        <li class="menu-item"><a href="#">Movies</a></li>
-                                        <li class="menu-item"><a href="#">Shows</a></li>
-                                        <li class="menu-item">
+                                        <li class="menu-item"><a href="movies.php">Movies</a></li>
+                                        <li class="menu-item"><a href="director.php">Director</a></li>
+                                        <li class="menu-item"><a href="genre.php">Genre</a></li>
+                                        <li class="menu-item"><a href="coment.php">Coment</a></li>
+                                        <!-- <li class="menu-item">
                                             <a href="#">CRUD</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item"><a href="movies.php">Movies</a></li>
@@ -57,7 +58,7 @@ $alls = mysqli_query($conn, "SELECT movies.judul, movies.cover_image, genres.gen
                                                 <li class="menu-item"><a href="#">Genre</a></li>
                                                 <li class="menu-item"><a href="#">Coment</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -204,7 +205,6 @@ $alls = mysqli_query($conn, "SELECT movies.judul, movies.cover_image, genres.gen
                                         </a>
                                         <div class="card-body" style="position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0);">
                                             <a href="#" class="h6 text-decoration-none text-light"><?= $all['judul']; ?></a>
-
                                             <div class="card-boy rounded-5 mt-2">
                                                 <span class="btn btn-hover iq-button">
                                                     <i class="fa fa-pencil mr-1"></i>

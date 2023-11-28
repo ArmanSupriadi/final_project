@@ -50,10 +50,10 @@
                                                 <li class="menu-item"><a href="#">About Us</a></li>
                                                 <li class="menu-item"><a href="#">Contact</a></li>
                                                 <li class="menu-item"><a href="#">FAQ</a></li>
-                                                <li class="menu-item"><a href="#">Admin</a></li>
+                                                <li class="menu-item"><a href="#"></a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item"><a href="admin/login.php">Admin</a></li>
+                                        <li class="menu-item"><a href="admin/login.php">Login</a></li>
                                     </ul>
                                 </div>
                             </div>
