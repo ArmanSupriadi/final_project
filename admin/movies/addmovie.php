@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .form-container {
-            max-width: 800px;
+            max-width: 750px;
             margin: 0 auto;
             padding: 20px;
         }
